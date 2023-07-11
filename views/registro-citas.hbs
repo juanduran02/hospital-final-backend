@@ -1,0 +1,39 @@
+<div class="formcita">
+    <form action="./agregar" method="post">
+        <fieldset>
+            <legend>Datos cita medica</legend>
+
+            <label for="cedula">Número de Cédula Paciente:<span> *</span></label>
+            <select id="cedula" name="cedula_cita" required>
+                <option value="">------------------- Seleccione la cedula paciente -------------------</option>
+                {{#each pacientes}}
+                <option value="{{cedula_paciente}}">{{cedula_paciente}}</option>
+                {{/each}}
+            </select><br>
+             <label for="cedula">Nombre Medico:<span> *</span></label>
+            <select id="nombre" name="nombre_cita" required>
+                <option value="">------------------- Seleccione el nombre de su doctor -------------------</option>
+                {{#each medicos}}
+                <option value="{{nombres}}">{{nombres}}</option>
+                {{/each}}
+            </select><br>
+            </select><br>
+            <label for="fecha">Fecha:<span> *</span></label>
+            <input type="date" id="fecha" name="fecha" required><br>
+            <label for="especialidad">Especialidad requerida:<span> *</span></label>
+             <select id="especialidadmed" name="especialidad_cita" required>
+                        <option value="esopacio">--------ESPECIALIDAD * --------- </option>
+                        <option value="Medicinageneral">Medicina general </option>
+                        <option value="Cardiología"> Cardiología</option>
+                        <option value="Medicinainterna"> Medicina interna</option>
+                        <option value="Dermatología">Dermatología </option>
+                        <option value="Rehabilitaciónfísica">Rehabilitación física </option>
+                        <option value="Psicología"> Psicología</option>
+                        <option value="Odontología"> Odontología</option>
+                        <option value="Radiología">Radiología </option>
+                    </select>
+              <input class="botton" type="submit" value="Enviar" />
+        </fieldset>
+    </form>
+    
+</div>

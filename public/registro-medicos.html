@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheets/generastyl.css" />
+    <link rel="stylesheet" href="/stylesheets/formular.css" />
+    <link rel="stylesheet" href="/stylesheets/Styleform.css" />
+    <script src="https://kit.fontawesome.com/548fecdbb4.js" crossorigin="anonymous"></script>
+    <title>formmed</title>
+</head>
+
+<body>
+
+    <div class="selector">
+        <header>
+            <img src="/images/imagen centro medico.png" class="centromed" />
+            <nav>
+                <a href="/"><i class="fa-solid fa-house"></i> inicio</a>
+                <a href="/medicos/agregar-medico"><i class="fa-solid fa-light fa-pen-to-square"></i> formulario medicos</a>
+                <a href="/pacientes/agregar-paciente"><i class="fa-solid fa-light fa-pen-to-square"></i> formulario pacientes </a>
+                <a href="/citas/agregar-cita"><i class="fa-solid fa-light fa-pen-to-square"></i> formulario citas</a>
+                <a href="/pacientes"><i class="fa-solid fa-light fa-file"></i> Tabla de datos pacientes</a>
+                <a href="/medicos"><i class="fa-solid fa-light fa-file"></i> Tabla de datos medicos</a>
+                <a href="/citas"><i class="fa-solid fa-light fa-file"></i> Tabla de citas</a>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <div class="formcita">
+            <form action="./agregar" method="post">
+                <fieldset>
+                    <legend>Datos Medicos</legend>
+                    <label for="cedulamed">CEDULA <span>*</span></label>
+                    <input class="regis" type="tel" id="cedulamed" name="cedula" autofocus placeholder="cedula"
+                        required />
+                    <br />
+                    <label for="nopmbremed">NOMBRES <span>*</span></label>
+                    <input class="regis" type="text" id="nombremed" name="nombre" autofocus
+                        placeholder="nombre o nombres" required />
+                    <label for="apellidosmed">APELLIDOS <span>*</span></label>
+                    <input class="regis" type="text" id="apellidosmed" name="apellido" placeholder="apellidos"
+                        required />
+                    <label for="correo">EMAIL <span>*</span></label>
+                    <input class="regis" type="email" id="correo" name="correo" autofocus placeholder="email"
+                        required />
+                    <label for="consultorio">Consultorio:<span> *</span></label><br />
+                    <input type="text" id="consultorio" name="consultorio" required><br>
+
+                    <select id="especialidadmed" name="especialidad" required>
+                        <option value="esopacio">--------ESPECIALIDAD * --------- </option>
+                        <option value="Medicinageneral">Medicina general </option>
+                        <option value="Cardiología"> Cardiología</option>
+                        <option value="Medicinainterna"> Medicina interna</option>
+                        <option value="Dermatología">Dermatología </option>
+                        <option value="Rehabilitaciónfísica">Rehabilitación física </option>
+                        <option value="Psicología"> Psicología</option>
+                        <option value="Odontología"> Odontología</option>
+                        <option value="Radiología">Radiología </option>
+                    </select>
+                    <br />  <input class="botton" type="submit" value="Enviar" />
+                  
+                </fieldset>
+            </form>
+        </div>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<h1>Tabla citas</h1>
+<table id="tabla-citas">
+    <thead>
+        <tr>
+            <th>cedula paciente</th>
+            <th>nombre</th>
+            <th>especialidad</th>
+            <th>fecha</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each citas}}
+        <tr>
+            <td>{{id_paciente}}</td>
+            <td>{{id_medico}}</td>
+            <td>{{especialidad_cita}}</td>
+            <td>{{formatoFecha fecha}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+<a href="citas/agregar-cita">Agregar cita</a>

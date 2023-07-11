@@ -1,0 +1,55 @@
+:root {
+    --primari-color: #ffffff;
+    --secundari-color: #00ffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    justify-content: center;
+    width: 100%;
+}
+
+body {
+    background-color: var(--primari-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+header {
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--secundari-color);
+}
+
+a {
+    font-size: 16px;
+    padding: 9px;
+    margin: 10px;
+    color: #100f0f;
+    transition: 2s;
+}
+    a:hover {
+        color: #ffffff;
+    }
+
+p.text {
+    margin: 4rem;
+    font-size: 20px;
+}
+
+.principal {
+    width: 100%;
+    height: 38rem;
+}
+
+.centromed {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    left: 100%;
+}

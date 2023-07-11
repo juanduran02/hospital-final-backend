@@ -1,0 +1,27 @@
+<h1>Tabla de datos medicos</h1>
+<table id="tabla-medicos">
+    <thead>
+        <tr>
+            <th>especialidad</th>
+            <th>nombre medico</th>
+            <th>apellido medico</th>
+            <th>consultorio</th>
+            <th>correo</th>
+            <th>opciones</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        {{#each medicos}}
+        <tr>
+            <td>{{especialidad}}</td>
+            <td>{{nombres}}</td>
+            <td>{{apellidos}}</td>
+            <td>{{consultorio}}</td>
+            <td>{{correo}}</td>
+             <td><a href="/medicos/eliminar/{{cedula}}">Eliminar</a></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+<a href="medicos/agregar-medico">Agregar medico</a>

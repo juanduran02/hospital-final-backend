@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheets/generastyl.css" />
+    <link rel="stylesheet" href="/stylesheets/formular.css" />
+    <link rel="stylesheet" href="/stylesheets/Styleform.css" />
+    <script src="https://kit.fontawesome.com/548fecdbb4.js" crossorigin="anonymous"></script>
+    <title>formcitas</title>
+</head>
+<body>
+    <div class="selector">
+        <header>
+            <img src="/images/imagen centro medico.png" class="centromed" />
+            <nav>
+                <a href="/"><i class="fa-solid fa-house"></i> inicio</a>
+                <a href="/medicos/agregar-medico"><i class="fa-solid fa-light fa-pen-to-square"></i> formulario medicos</a>
+                <a href="/pacientes/agregar-paciente"><i class="fa-solid fa-light fa-pen-to-square"></i> formulario pacientes </a>
+                <a href="/citas/agregar-cita"><i class="fa-solid fa-light fa-pen-to-square"></i> formulario citas</a>
+                <a href="/pacientes"><i class="fa-solid fa-light fa-file"></i> Tabla de datos pacientes</a>
+                <a href="/medicos"><i class="fa-solid fa-light fa-file"></i> Tabla de datos medicos</a>
+                <a href="/citas"><i class="fa-solid fa-light fa-file"></i> Tabla de citas</a>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <div class="formcita">
+            <form action="./agregar" method="post">
+                <fieldset>
+                    <legend>Datos pacientes</legend>
+                    <label for="cedula">CEDULA <span>*</span></label>
+                    <input class="regis" type="tel" id="cedula" name="cedula_paciente" placeholder="cedula" required />
+                    <label for="nombre">NOMBRE <span>*</span></label>
+                    <input class="regis" type="text" id="nombre" name="nombre" autofocus placeholder="nombre" required>
+                    <br />
+                    <label for="apellidos">APELLIDOS <span>*</span></label>
+                    <input class="regis" type="text" id="apellidos" name="apellido" autofocus placeholder="primer Apellido" required>
+                    <br />
+                    <label for="edad">EDAD <span>*</span></label>
+                    <input class="regis" type="number" id="edad" name="edad" autofocus placeholder="edad" required />
+                    <label for="telefono">TELEFONO <span>*</span></label>
+                    <input class="regis" type="tel" id="telefono" name="telefono" autofocus placeholder="telefono" required />
+                    <br />
+                    <input class="botton" type="submit" value="Enviar" />
+                </fieldset>
+            </form>
+
+        </div>
+    </main>
+
+</body>
+</html>

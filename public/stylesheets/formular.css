@@ -1,0 +1,19 @@
+#main-container{
+    margin: 150px auto;
+    width: 600px;
+}
+table{
+    border: 0.001px solid black;
+    margin: 19px;
+    border-collapse: collapse;
+    width: 96%;
+}
+
+th, td {
+    color: #000000;
+    padding: 20px;
+}
+
+tr:nth-child(odd) {
+    background-color: #ddd;
+}
